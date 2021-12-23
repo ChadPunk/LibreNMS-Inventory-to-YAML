@@ -18,9 +18,9 @@ Then clone or copy the desired script to your folder:
 </li>
 
 <li>
-Replace the URLs, API Key, and hosts files varibale with your infromation.
-url_devices = 'http://10.77.8.3:8000/api/v0/devices/'
-groupsurl = 'http://10.77.8.3:8000/api/v0/devicegroups/'
-api_key = '3f5e1e02ffb53fa1837a15eaa74beb62'
-hosts_file = 'hosts'
+Replace the URLs, API Key, and hosts files varibale with your infromation.<br><br>
+ url_devices = 'http://YOURIPHERE/api/v0/devices/'<br>
+ groupsurl = 'http://YOURIPHERE/api/v0/devicegroups/'<br>
+ api_key = 'YOURAPIKEY'<br>
+ hosts_file = 'YOURHOSTFILE'
 </li>
