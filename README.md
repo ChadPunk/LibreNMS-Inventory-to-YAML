@@ -9,6 +9,7 @@ There are two scripts. They both function a little differently but achieve the s
 <li>
 To install ruamel.yaml, Run: 
 <b>pip install ruamel.yaml</b>
+  *only if you plan on using <i>librenms_yamlinventory.py</i>
 </li>
 
 <li>
