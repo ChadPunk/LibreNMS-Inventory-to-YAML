@@ -1,5 +1,5 @@
 # LibreNMS-Inventory-to-YAML
-This script will let you make an API call to LibreNMS to pull device groups and devices within those groups. This file can then be used in an Ansible inventory. This scripts could use some work so feel free to clean it up.
+This script will let you make an API call to LibreNMS to pull device groups and devices within those groups. This file can then be used in an Ansible inventory. These scripts could use some cleaning up so feel free to tweak them to achieve your desired goal.
 
 There are two scripts. They both function a little differently but achieve the same goal. 
 <b>librenms_yamlinventory.py</b> uses the <b>ruamel.yaml</b> package and will be required to run the script.
