@@ -8,7 +8,7 @@ url_devices = 'http://10.77.8.3:8000/api/v0/devices/'
 groupsurl = 'http://10.77.8.3:8000/api/v0/devicegroups/'
 
 # Change Me!!!
-api_key = '123456'
+api_key = '3f5e1e02ffb53fa1837a15eaa74beb62'
 hosts_file = 'hosts'
 
 # Pass authentication token
@@ -44,7 +44,7 @@ groups = requests.get(groupsurl, headers=headers)
 for groups in groups.json()['groups']:
     group = groups['name']
     ansible_inventory_file.write('    ' + group + ':' + '\n')
-    ansible_inventory_file.write("       hosts:\n")
+    ansible_inventory_file.write('      hosts:\n')
     librenmsgroup = requests.get(groupsurl + group, headers=headers)
     resp = librenmsgroup.json()
     print(group)
@@ -54,7 +54,7 @@ for groups in groups.json()['groups']:
             librenmsgroup = requests.get(url_devices + deviceid, headers=headers)
             for item in librenmsgroup.json()['devices']:
                 name = item['sysName']
-                ansible_inventory_file.write('      ' + name + ':\n')
+                ansible_inventory_file.write('        ' + name + ':\n')
                 print(item['sysName'])
     except KeyError:
         print("No group detected")
