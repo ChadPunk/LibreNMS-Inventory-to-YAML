@@ -44,6 +44,7 @@ groups = requests.get(groupsurl, headers=headers)
 for groups in groups.json()['groups']:
     group = groups['name']
     ansible_inventory_file.write('    ' + group + ':' + '\n')
+    ansible_inventory_file.write("      hosts:\n")
     librenmsgroup = requests.get(groupsurl + group, headers=headers)
     resp = librenmsgroup.json()
     print(group)
