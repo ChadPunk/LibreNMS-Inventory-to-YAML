@@ -1,4 +1,6 @@
 # LibreNMS-Inventory-to-YAML
+As of now the formatting produced by the YAML libary incorrectly adds a '-' to the hosts which will no be loaded. In the mean time please use the file that spaces everything manually for better results.
+
 This script will let you make an API call to LibreNMS to pull device groups and devices within those groups. This file can then be used in an Ansible inventory. These scripts could use some cleaning up so feel free to tweak them to achieve your desired goal.
 
 There are two scripts. They both function a little differently but achieve the same goal. 
